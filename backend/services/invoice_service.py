@@ -12,7 +12,7 @@ def process_invoice(image_path):
     :return: Analysis results as a JSON object
     """
     # The prompt to ask for a detailed description of the image
-    question = "<image>\nDescribe the image in detail."
+    question = "<image>\Lấy ra ngày hóa đơn, ký hiệu hóa đơn, số hóa đơn, tổng tiền của hóa đơn."
 
     # Analyze the image using the LLM
     response = llm.analyze_image(image_path, question)

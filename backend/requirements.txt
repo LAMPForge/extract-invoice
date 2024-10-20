@@ -1,0 +1,6 @@
+Flask
+torch
+transformers
+pillow
+torchvision
+flash-attn
