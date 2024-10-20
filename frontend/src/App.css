@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+/* custom.css */
+
+/* Define custom colors */
+:root {
+    --primary-color: #FF9900; /* AWS Orange */
+    --secondary-color: #FFFFFF; /* White */
+    --background-color: #F8F9FA; /* Light Gray */
+    --text-color: #212529; /* Dark Gray */
+    --border-radius: 3px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* General styling */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navbar styling */
+.navbar {
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar .navbar-brand {
+    color: var(--secondary-color);
 }
 
-.App-link {
-  color: #61dafb;
+.navbar .navbar-brand:hover {
+    color: var(--background-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Card styling */
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: var(--border-radius);
+}
+
+.btn-primary:hover {
+    background-color: #E67E22; /* Slightly darker orange */
+    border-color: #E67E22;
+}
+
+/* Form input styling */
+.form-control {
+    border-radius: var(--border-radius);
+}
+
+/* Alert styling */
+.alert-danger {
+    background-color: #FFCDD2; /* Light red */
+    color: #B71C1C;
+}
+
+/* Custom styles for the JSON response display */
+.preformatted-output {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+}
+
+/* Image preview styling */
+.image-preview {
+    max-width: 100%;
+    max-height: 200px;
+    margin-top: 10px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
